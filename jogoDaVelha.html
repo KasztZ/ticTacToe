@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="gameTitle">Jogo da Velha</h1>
+        <h2 id="turnPlayer"></h2>
+    </header>
+
+    <div id="backgroundDiv">
+        <div id="gameTable">
+            <button class="gameLine" id="topLeft" data-name="topLeft"></button>
+            <button class="gameLine" id="topMiddle" data-name="topMiddle"></button>
+            <button class="gameLine" id="topRight" data-name="topRight"></button>
+            <button class="gameLine" id="middleLeft" data-name="middleLeft"></button>
+            <button class="gameLine" id="middleMiddle" data-name="middleMiddle"></button>
+            <button class="gameLine" id="middleRight" data-name="middleRight"></button>
+            <button class="gameLine" id="bottomLeft" data-name="bottomLeft"></button>
+            <button class="gameLine" id="bottomMiddle" data-name="bottomMiddle"></button>
+            <button class="gameLine" id="bottomRight" data-name="bottomRight"></button>
+        </div>
+        <div id="turnHistory">
+            
+        </div>
+    </div>
+
+    <section id="howToPlay">
+        <input type="button" id="buttonHowToPlay" value="Como jogar?">
+        <div class="modal" id="modalHowToPlay">
+            <div id="modalContent">
+                <span class="closeButton">&times;</span>
+                <p>Como Jogar</p>
+                <p>Faça uma linha OU coluna OU diagonal ser do mesmo jogador</p>
+                <p>O jogo começa com o jogador X</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            KassZ
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
